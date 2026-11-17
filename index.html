@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GAGİ OYSS Asistanı — Gizlilik Politikası</title>
+<style>
+:root{--bg:#f4f7fc;--fg:#1b2a47;--mut:#55627d;--ac:#2f5fd0;--card:#fff;--bd:#d3dcec}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1730;--fg:#e6ecfb;--mut:#a8b4d0;--ac:#7aa2ff;--card:#17203d;--bd:#2a3760}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 "Segoe UI",Inter,Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 56px}
+h1{font-size:26px;margin:8px 0 4px}
+h2{font-size:18px;margin:28px 0 8px;color:var(--ac)}
+.sub{color:var(--mut);font-size:14px}
+.box{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;margin:12px 0}
+ul{padding-left:20px}li{margin:4px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>GAGİ OYSS Asistanı — Gizlilik Politikası</h1>
+<p class="sub">Son güncelleme: 17.11.2026 · Sürüm 3.9.24</p>
+
+<div class="box"><b>Kısaca:</b> Eklenti öğrenci bilgilerini, puanları, şifreleri ya da başka kişisel verileri kendi sunucusuna <b>göndermez</b>; hesap, reklam ya da izleme yoktur. Tek istisna, isteğe bağlı <b>sesli girişte</b> tarayıcının (Chrome'un) kendi ses tanıma hizmetinin sesi Google'a gönderebilmesidir (aşağıda "Sesli giriş").</div>
+
+<h2>1. Bu eklenti nedir?</h2>
+<p>GAGİ OYSS Asistanı, öğretmenlerin e-Okul'daki Ortak Yazılı Sınav Sistemi (OYSS) not giriş ekranında soru bazlı puanları klavye, ses ve çizelge yükleme ile daha hızlı girmesine ve girilen puanları denetlemesine yardımcı olan bağımsız bir yardımcı araçtır. Millî Eğitim Bakanlığı ya da e-Okul ile resmî bir bağlantısı yoktur ve onlar tarafından onaylanmamıştır.</p>
+
+<h2>2. Hangi veriler işlenir?</h2>
+<ul>
+<li><b>e-Okul sayfasındaki öğrenci listesi</b> (okul numarası, ad, puanlar): yalnızca kullanıcının tarayıcısında, o sayfada işlenir. Eklentiye ait bir sunucuya gönderilmez, kaydedilmez.</li>
+<li><b>Ayarlar</b> (ses, geri bildirim ve tema tercihleri vb.) ile ilk açılış tanıtımının görülüp görülmediği ve eklenti sürümü: tarayıcı depolamasında (<code>chrome.storage</code>) yalnız bu bilgisayarda tutulur.</li>
+<li><b>Taslak kurtarma</b> (varsayılan olarak kapalıdır): Kullanıcı açarsa, kaydedilmemiş puanlar yalnızca bu bilgisayarda en çok 12 saat tutulur; hiçbir yere gönderilmez.</li>
+<li><b>Sorun günlüğü</b>: Yalnızca açık sekmenin belleğinde tutulur, sayfa yenilenince silinir. Öğrenci adı ve puan içermez. Kullanıcı isterse metni kopyalayıp kendisi paylaşır; eklenti otomatik göndermez.</li>
+<li>Şifre ve T.C. kimlik numarası <b>saklanmaz</b>.</li>
+</ul>
+
+<h2>3. Çizelge yükleme</h2>
+<p>Kullanıcının seçtiği PDF, Word ya da görüntü dosyası yalnızca bu bilgisayarda açılır ve eklenti tarafından dışarı gönderilmez. El yazısı fotoğrafları eklenti içinde okunmaz; kullanıcı isterse "okuma istemini" kopyalayıp fotoğrafla birlikte kendi seçtiği bir yapay zekâ uygulamasına <b>kendisi</b> verebilir. Bu durumda fotoğraftaki bilgilerin gideceği hizmetin gizlilik koşulları geçerlidir; öğrenci adlarının görünmemesi için adı sütununu kapatarak çekim yapılması önerilir.</p>
+
+<h2>4. Sesli giriş (isteğe bağlı)</h2>
+<p>Sesli giriş yalnızca kullanıcı mikrofon düğmesine bastığında ve tarayıcıdan mikrofon izni verdiğinde çalışır. Eklenti, tarayıcının yerleşik konuşma tanıma özelliğini (Web Speech API) kullanır. Chrome'un bu özelliği, konuşmayı metne çevirmek için sesi <b>Google'ın sunucularına</b> gönderebilir; bu işlem Google'ın gizlilik koşullarına tabidir ve eklenti tarafından kontrol edilmez. Eklenti ses kaydı tutmaz. Sesli giriş kapalıyken hiçbir ses ya da veri gönderilmez. Bu istenmiyorsa sesli giriş kullanılmamalıdır; klavye ve çizelge yükleme özellikleri internete hiçbir veri göndermez.</p>
+<p>Sesli okuma (uyarıların seslendirilmesi) tarayıcının yerel özelliğiyle yapılır.</p>
+
+<h2>5. Paylaşım ve satış</h2>
+<p>Eklenti hiçbir veriyi üçüncü kişilerle paylaşmaz, satmaz ve reklam ya da profil oluşturma amacıyla kullanmaz.</p>
+
+<h2>6. İzinler</h2>
+<ul>
+<li><code>storage</code>: ayarları, tanıtım görülme bilgisini ve isteğe bağlı taslağı bu bilgisayarda saklamak için.</li>
+<li><code>https://e-okul.meb.gov.tr/*</code> sitesinde çalışma: eklenti yalnızca bu adreste çalışır; başka hiçbir siteye erişmez.</li>
+</ul>
+
+<h2>7. Öğrenci verisi ve sorumluluk</h2>
+<p>e-Okul'daki öğrenci verileri kişisel veridir. Bu verilerin 6698 sayılı KVKK kapsamındaki sorumluluğu ilgili okul/kurum ve kullanıcıdadır. Eklenti bu verileri toplamaz. Kullanıcı; girdiği notların doğruluğundan, e-Okul'daki Kaydet işleminden ve kurumunun kurallarına uymaktan sorumludur. Eklenti hiçbir puanı otomatik kaydetmez.</p>
+
+<h2>8. Değişiklikler</h2>
+<p>Bu politika güncellenirse yukarıdaki tarih değişir ve yeni metin bu sayfada yayınlanır.</p>
+
+<h2>9. İletişim</h2>
+<p>Geliştirici: Gafur ÖKLÜ · E-posta: oklugafur@gmail.com</p>
+</main>
+</body>
+</html>
